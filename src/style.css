@@ -1,3 +1,10 @@
-body {
-  background-color: blueviolet;
+a {
+  text-decoration: none;
+}
+
+.coder {
+  color: blueviolet;
+  font-family: monospace;
+  font-style: italic;
+  font-weight: bold;
 }
