@@ -33,12 +33,7 @@ p {
 }
 
 form {
-  background-color: #f4ebeb;
-  border-radius: 10px;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   display: flex;
-  margin-bottom: 30px;
-  padding: 30px;
 }
 
 footer {
@@ -70,6 +65,20 @@ footer {
   max-width: 700px;
 }
 
+.form-container {
+  background-color: #f4ebeb;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+.hint {
+  font-size: 10px;
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+}
 .options {
   font-family: "Poiret One", sans-serif;
   font-weight: 600;
