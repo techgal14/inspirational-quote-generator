@@ -10,16 +10,16 @@ function displayInspiration(response) {
 function generatePositivity(event) {
   event.preventDefault();
 
-  instructionsInput = document.querySelector("#user-instructions");
+  let instructionsInput = document.querySelector("#user-instructions");
   let apiKey = "4a7bf3d9cod778ee0bbe6f174ftf4fa8";
   let prompt = `Generate a positive ${instructionsInput.value}`;
   let context =
-    "You are a supportive and inspirational AI Assistant. Based on the option submitted by the user, please generate a positive mantra, quote or words of affirmation. Make sure to follow user instructions. Never repeat the answer twice. Sign the response with 'SheCodes AI' inside of a <strong> element and always add it to a new line using a <br /> . Please behave. ";
+    "You are a supportive and inspirational AI Assistant. Based on the option submitted by the user, please generate a positive mantra, quote or words of affirmation. Make sure to follow user instructions. Never repeat the answer twice. Sign the response with '- SheCodes AI' inside of a <strong> element and always add it to a new line using a <br /> . Please behave. ";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log("generating positivity");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  let contentElement = document.querySelector("#inspiration");
+  contentElement.classList.remove("hidden");
+  contentElement.innerHTML = `<div class="blink"> Generating your ${instructionsInput.value}... please wait ⏱️ </div>`;
 
   axios.get(apiUrl).then(displayInspiration);
 }
