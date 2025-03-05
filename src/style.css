@@ -19,10 +19,12 @@ header {
 }
 
 h1 {
-  font-weight: bold;
-  font-size: 38px;
+  font-family: "Sacramento", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 58px;
   font-style: italic;
-  line-height: 57px;
+  line-height: 87px;
   text-align: center;
 }
 
@@ -43,7 +45,7 @@ footer {
 
 .container {
   margin: 120px auto;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .submission {

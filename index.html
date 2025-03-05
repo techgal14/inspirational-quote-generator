@@ -4,23 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Inspiration Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>AI Inspirational Quote Generator</h1>
+        <h1>🌟 AI Positivity Generator 🌟</h1>
+        <p>
+          On days when you're feeling down, overwhelmed or uninspired, I've got
+          your back! Get your fix of positivity from my AI Generator 💖 <br />
+          Choose from the following:
+        </p>
+        <p></p>
+        <ul>
+          <li>Mantra</li>
+          <li>Quote</li>
+          <li>Words of Affirmation</li>
+        </ul>
       </header>
       <main>
         <form id="positivity-generator-form">
           <input
             type="text"
-            placeholder="Enter something here"
+            placeholder="Type your selection here..."
             autofocus
             autocomplete="off"
             required
             class="submission"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
