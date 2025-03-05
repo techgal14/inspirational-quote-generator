@@ -68,7 +68,7 @@ footer {
   width: 150px;
 }
 
-.quote {
+.main-text {
   background-color: #f4ebeb;
   border-left: 3px solid #7243a0;
   border-radius: 0 10px 10px 0;
@@ -82,7 +82,7 @@ footer {
 .coder {
   color: blueviolet;
   font-family: monospace;
-  font-size: 12px;
+  font-size: 11px;
   font-style: italic;
   font-weight: bold;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Inspiration Generator</title>
   </head>
   <body>
@@ -12,7 +13,7 @@
         <h1>AI Inspirational Quote Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="positivity-generator-form">
           <input
             type="text"
             placeholder="Enter something here"
@@ -23,7 +24,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="quote">The quote will go here</div>
+        <div class="main-text" id="inspiration"></div>
       </main>
       <footer>
         This project was coded by
